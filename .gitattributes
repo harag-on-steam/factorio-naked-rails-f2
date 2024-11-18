@@ -1,0 +1,22 @@
+*.txt text
+*.md text
+*.cfg text
+*.lua text
+*.json text
+*.sh text eol=lf
+
+*.png binary
+*.jpg binary
+*.xcf binary export-ignore
+*.pdn binary export-ignore
+*.blend binary export-ignore
+gallery export-ignore
+gallery/** export-ignore
+
+.vscode export-ignore
+.vscode/** export-ignore
+
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+package.sh export-ignore

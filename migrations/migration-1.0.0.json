@@ -1,0 +1,9 @@
+{
+	"entity":
+	[
+		["naked-straight-rail",        "naked-legacy-straight-rail" ],
+		["naked-curved-rail",          "naked-legacy-curved-rail"   ],
+		["naked-sleepy-straight-rail", "sleepy-legacy-straight-rail"],
+		["naked-sleepy-curved-rail",   "sleepy-legacy-curved-rail"  ]
+	]
+}

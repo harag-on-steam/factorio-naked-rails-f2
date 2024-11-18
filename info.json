@@ -1,0 +1,13 @@
+{
+	"name": "naked-rails-f2",
+	"version": "1.0.0",
+	"title": "Naked Rails",
+	"author": "Harag",
+	"homepage": "",
+	"factorio_version": "2.0",
+	"dependencies": [
+		"base",
+		"!naked-rails_se"
+	],
+	"description": "Remove both gravel and sleepers from rails or keep the sleepers. Re-creation of the mod with the same name from Factorio 1.x."
+}

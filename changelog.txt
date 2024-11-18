@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-11-17
+  Features:
+    - Tool to remove gravel and sleepers from rails, optionally keeping the sleepers
+    - Migrate naked rails from Factorio 1.x to legacy rails
