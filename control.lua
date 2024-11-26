@@ -5,22 +5,25 @@ local function replace_rails(event, entity_mapping)
 		return
 	end
 
-	local player = game.players[event.player_index]
+	local player_index = event.player_index
+	local undo_info = {player = player_index}
 
 	for _,e in pairs(event.entities) do
 		local replacement_name = entity_mapping[e.name]
 		if replacement_name then
 			local new_rail = {
 				name = replacement_name,
+				quality = e.quality,
 				position = e.position,
 				direction = e.direction,
 				force = e.force,
-				player = player,
+				player = player_index,
 				-- fast_replace = true, -- TODO Doesn't seem to work even with the proper fast-replace-group set
 			}
 
-			e.destroy()
-			event.surface.create_entity(new_rail)
+			if e.destroy(undo_info) then
+				event.surface.create_entity(new_rail)
+			end
 		end
 	end
 end

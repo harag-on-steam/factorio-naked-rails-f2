@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2024-11-26
+  Bugfixes:
+    - Respect rail quality when replacing rails (Fixes #1)
+    - Properly support undoing rail replacements
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2024-11-17
   Features:
