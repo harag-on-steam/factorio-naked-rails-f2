@@ -1,7 +1,7 @@
 require("globals")
 
 local function replace_rails(event, entity_mapping)
-	if not event.item == "naked-rails-tool" then
+	if event.item ~= "naked-rails-tool" then
 		return
 	end
 
